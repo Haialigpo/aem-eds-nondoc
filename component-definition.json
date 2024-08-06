@@ -135,6 +135,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Product list",
+          "id": "plist",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Product list",
+                  "model": "productlist",
+                  "apiUrl": "https://main--aem-eds-nondoc--haialigpo.hlx.page/",
+                }
+              }
+            }
+          }
         }
       ]
     }
