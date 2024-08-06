@@ -145,8 +145,7 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Product list",
-                  "model": "plist",
-                  "apiUrl": "https://main--aem-eds-nondoc--haialigpo.hlx.page/"
+                  "model": "plist"
                 }
               }
             }
