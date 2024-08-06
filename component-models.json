@@ -185,5 +185,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+  "id": "plist",
+  "fields": [
+     {
+       "component": "text",
+       "valueType": "string",
+       "name": "apiUrl",
+       "label": "apiUrl",
+       "value": ""
+     }
+   ]
   }
 ]
