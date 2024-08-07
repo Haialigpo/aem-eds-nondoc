@@ -157,7 +157,14 @@
         "value": "",
         "label": "Style",
         "valueType": "string"
-      }
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "apivalue",
+        "label": "Apivalue",
+        "multi": false
+     }
     ]
   },
   {
