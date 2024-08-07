@@ -27,7 +27,7 @@ async function initProductListComponents() {
     // Extract data attributes from the div
     const fetchAndDisplayProducts = async (page = 1) => {
 
-    const resp = await fetch(apiurl);
+    const resp = await fetch(apivalue);
     const jsono = await resp.json();
     createProductList(jsono.data);
       
