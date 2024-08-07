@@ -159,11 +159,11 @@
         "valueType": "string"
       },
       {
-        "component": "reference",
+        "component": "text",
         "valueType": "string",
         "name": "apivalue",
         "label": "Apivalue",
-        "multi": false
+        "value": "",
      }
     ]
   },
