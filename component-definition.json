@@ -146,7 +146,7 @@
                 "template": {
                   "name": "Product-list",
                   "model": "plist",
-                  "prop": "https://main--aem-eds-nondoc--haialigpo.hlx.page/"
+                  "resource": "https://main--aem-eds-nondoc--haialigpo.hlx.page/product-sheet.json"
                 }
               }
             }
