@@ -6,7 +6,6 @@ async function initProductListComponents() {
   // Iterate over each div and perform the necessary operations
   divs.forEach((div) => {
     function createProductList(products) {
-      console.log(products);
       let productListHTML = '';
       products.forEach((product) => {
         productListHTML += `
@@ -19,22 +18,16 @@ async function initProductListComponents() {
                           </div>
                       `;
       });
-
       div.querySelector('.product-list').innerHTML += productListHTML;
     }
-
     const { apivalue } = div.dataset;
     // Extract data attributes from the div
-    const fetchAndDisplayProducts = async (page = 1) => {
-
+    const fetchAndDisplayProducts = async () => {
     const resp = await fetch(apivalue);
     const jsono = await resp.json();
     createProductList(jsono.data);
-      
-    
     }
     fetchAndDisplayProducts();
   });
 }
-
 initProductListComponents();
