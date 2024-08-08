@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/aem-eds-nondoc/:/",
-    "/content/aem-eds-nondoc/product-sheet:/product-sheet.json"
+    "/content/aem-eds-nondoc/product-sheet:/product-sheet.json",
+    "/content/aem-eds-nondoc/metadata:/metadata.json"
   ]
 }
