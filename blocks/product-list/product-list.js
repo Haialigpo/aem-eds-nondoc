@@ -11,7 +11,7 @@ async function initProductListComponents() {
         productListHTML += `
                           <div class="product-item">
                              <a href="${`plp?product=${product.name}`}" aria-label="View details for ${product.name}">
-                              <img src="${`https://placehold.jp/400x400.png`}" alt="${product.altText}">
+                              <img src="${'https://placehold.jp/400x400.png'}" alt="${product.altText}">
                                <h2>${product.name}</h2>
                               <div class="product-description">${product.description}</div>
                               </a>
@@ -23,10 +23,10 @@ async function initProductListComponents() {
     const { apivalue } = div.dataset;
     // Extract data attributes from the div
     const fetchAndDisplayProducts = async () => {
-    const resp = await fetch(apivalue);
-    const jsono = await resp.json();
-    createProductList(jsono.data);
-    }
+      const resp = await fetch(apivalue);
+      const jsono = await resp.json();
+      createProductList(jsono.data);
+    };
     fetchAndDisplayProducts();
   });
 }
