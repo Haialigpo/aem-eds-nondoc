@@ -29,7 +29,8 @@
       "cards",
       "columns",
       "plist",
-      "aem-content-fragment"
+      "aem-content-fragment",
+      "fragment"
     ]
   },
   {
