@@ -30,14 +30,15 @@ export default async function decorate(block) {
     contentFragmentData.data.articleList.items.forEach((item) => {
       const itemId = `urn:aemconnection:${item._path}/jcr:content/data/master`;
       const element = document.createElement('li');
+      const imagePath = item.featuredImage && item.featuredImage._path ? item.featuredImage._path : '';
       element.setAttribute('data-aue-resource', itemId);
       element.setAttribute('data-aue-type', 'reference');
       element.setAttribute('data-aue-filter', 'cf');
       element.setAttribute('data-aue-label', `Content Fragment ${item._path}`);
       element.innerHTML = `<p data-aue-prop="title" data-aue-type="text" data-aue-label="title">
         <picture>
-          <source type="image/webp" srcset="${item.featuredImage._path}">
-          <img loading="lazy" alt="" src="${item.featuredImage._path}" data-aue-prop="image" data-aue-label="Image" data-aue-type="media" style="width:300px">
+          <source type="image/webp" srcset="${imagePath}">
+          <img loading="lazy" alt="" src="${imagePath}" data-aue-prop="image" data-aue-label="Image" data-aue-type="media" style="width:300px">
         </picture>
         ${item.title}
       </p>`;
