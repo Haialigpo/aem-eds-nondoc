@@ -8,7 +8,7 @@ import { loadFragment } from '../fragment/fragment.js';
 export default async function decorate(block) {
   // Fetch content-fragment data from API
   const contentFragmentMeta = getMetadata('content-fragment');
-  const apiEndpoint = contentFragmentMeta ? new URL(contentFragmentMeta, window.location).pathname : 'https://author-p7452-e12433.adobeaemcloud.com/graphql/execute.json/wknd-shared/article-by-slug;slug=aloha-spirits-in-northern-norway';
+  const apiEndpoint = contentFragmentMeta ? new URL(contentFragmentMeta, window.location).pathname : 'https://author-p76602-e1098390.adobeaemcloud.com/graphql/execute.json/wknd-shared/article-by-slug;slug=aloha-spirits-in-northern-norway';
   
   try {
     const response = await fetch(apiEndpoint);
